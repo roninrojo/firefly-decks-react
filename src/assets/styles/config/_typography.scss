@@ -1,0 +1,102 @@
+@use "../modules/vars";
+
+// Fonts
+@font-face {
+    font-family: "bankgthd";
+    src: url("./src/assets/fonts/bankgthd.ttf");
+}
+
+@font-face {
+    font-family: "FranklinGothic";
+    src: url("./src/assets/fonts/Franklin_Gothic_Medium_Cond_Regular.ttf");
+}
+
+// Titles & Text
+
+.title {
+    font-family: 'bankgthd', 'FranklinGothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 100%;
+    color: transparent;
+
+    &--Alliance {
+        background-image: var(--alliance-gradient);
+            background-size: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -webkit-text-stroke: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+
+    &--Border {
+        background-image: var(--border-gradient);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        // text-shadow: 0 0 5px rgba(255, 0, 0, 0.3), 0 0 3px rgba(255, 0, 0, 0.3), 0 1px 1px rgba(76, 29, 29, 0.75);
+    }
+}
+
+.opt-title {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+
+    background-size: 100%;
+    background-clip: text;
+    background-repeat: repeat-y;
+    margin: 0 0 1rem 0;
+    padding-right: 2rem;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-shadow: none;
+
+    // underline
+        &:before {
+            content: '';
+            position: absolute;
+            width: 80%;
+            bottom: -.6rem;
+            height: 3px;
+            transform: skewX(45deg);
+        }
+}
+
+ul ul {
+    li {
+        margin-left: 1rem;
+        margin-bottom:.5rem;
+    }
+}
+
+.guns {
+    font-size: 1.1em;
+    color: rgb(255, 221, 0);
+    text-shadow: 0 0 3px red;
+}
+
+.mech {
+    font-size: 1.3em;
+    color: var(--color-darkblue);
+    text-shadow: 0 0 10px rgba(0,0,0,1);
+}

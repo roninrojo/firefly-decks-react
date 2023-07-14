@@ -1,0 +1,25 @@
+// Vars
+
+// Colors
+:root {
+    --color-softaqua: rgb(176, 251, 255);
+    --color-borderBorder: rgb(245, 188, 73);
+    --color-aqua: rgb(112, 199, 223);
+    --color-blue: rgb(59, 119, 208);
+    --color-brown: rgb(116, 82, 47);
+    --color-darkblue: rgb(73, 107, 147);
+    --color-borderAlliance: var(--color-aqua);
+    --color-darkblue-hud: rgba(73, 107, 147, 0.20);
+    --color-redborder: rgb(167, 15, 15);
+    --color-redblood: rgba(255, 0, 0, 0.5);
+    --color-darkgray-hud: rgba(51, 51, 51, 0.20);
+    --alliance-gradient: repeating-linear-gradient(to bottom, var(--color-aqua), var(--color-darkblue) 1em);
+    --border-gradient: repeating-linear-gradient(to bottom, var(--color-borderBorder), var(--color-brown) 1em);
+
+    --border-radius: 1rem;
+
+    --header-height: 5rem;
+    --space: 1rem;
+    --space--small: calc(var(--space) / 2);
+    --space--mini: calc(var(--space) / 3);
+}

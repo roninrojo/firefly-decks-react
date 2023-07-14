@@ -1,0 +1,127 @@
+@use "./modules/vars";
+
+// Testing
+.idCard {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: .3;
+    font-size: 0.8em;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space);
+    // justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    background-color: #000;
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+        justify-content: center;
+    }
+
+    @media (min-width: 550px) and (max-height: 400px) and (orientation: landscape) {
+        padding: calc(var(--space) * 1.5);
+    }
+
+    @media (min-width: 550px) and (max-width: 1023px) and (orientation:portrait) {
+        justify-content: center;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+// Elements
+.bgContainer {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.bg {
+    background: url("./src/assets/img/outerspace-bg.png") repeat-x top left;
+    width: 3600px;
+    height: 100vh;
+    background-size: contain;
+    animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-1200px, 0, 0);
+        /* The image width */
+    }
+}
+
+.nav {
+    color: #fff;
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: var(--space);
+
+    @media (min-width: 550px) and (orientation: landscape) {
+        display: none;
+    }
+    
+    @media(min-width: 768px) and (orientation:portrait) {
+        width: 60%;
+
+    }
+
+    .toggle {
+        padding: var(--space--mini);
+        width: 100%;
+        height: 100%;
+        
+        &--Border {
+            border: 3px solid var(--color-borderBorder);
+            border-radius: var(--border-radius);
+            height: 100%;
+            background: url("./src/assets/img/borderspaceback.png") no-repeat 50% 50%;
+            background-size: 10%;
+            filter: drop-shadow(0 0 5px var(--color-redblood));
+            box-shadow: 0 0 15px rgb(245, 188, 73, 0.7);
+        }
+        
+        &--Alliance {
+            padding: 1rem;
+            border: 3px solid var(--color-aqua);
+            background: url("./src/assets/img/alliance-logo.png") no-repeat 50% 50%;
+            border-radius: var(--border-radius);
+            background-size: 12%;
+            filter: drop-shadow(0 0 5px var(--color-aqua));
+            box-shadow: 0 0 15px rgba(112, 199, 223, 0.2);
+        }
+    }
+}
+
+
+
+// Touching mobile
+* {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}

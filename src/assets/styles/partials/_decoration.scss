@@ -1,0 +1,81 @@
+// Titles
+
+.AllianceDeck__ui {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    border-radius: var(--border-radius);
+
+    .ui-title1 {
+        position: absolute;
+        top: 25%;
+        &:before {
+            content: '';
+            width: 13px;
+            height: 2rem;
+            left: 0;
+            top: 0;
+            display: block;
+            position: absolute;
+            transform: skewY(45deg);
+            background-color: var(--color-aqua);
+        }
+
+        &:after {
+            content: '';
+            width: 13px;
+            height: 2rem;
+            top: .8rem;
+            left: 0;
+            display: block;
+            position: absolute;
+            transform: skewY(-45deg);
+            background-color:var(--color-aqua);
+        }
+    }
+
+    .ui-title2 {
+        position: absolute;
+        top: 60%;
+        &:before {
+            content: '';
+            width: 10px;
+            height: 2rem;
+            left: 0;
+            top: 0;
+            display: block;
+            position: absolute;
+            transform: skewY(45deg);
+            background-color: var(--color-aqua);
+        }
+
+        &:after {
+            content: '';
+            width: 10px;
+            height: 2rem;
+            top: .8rem;
+            left: 0;
+            display: block;
+            position: absolute;
+            transform: skewY(-45deg);
+            background-color:var(--color-aqua);
+        }
+    }
+
+    .borderLeft {
+        position: absolute;
+        height: 100%;
+        width: 5px;
+        background-color: var(--color-aqua);
+        left: 0;
+    }
+
+    .borderBottom {
+        position: absolute;
+        height: 8px;
+        width: 100%;
+        background-color: var(--color-aqua);
+        bottom: 0;
+    }
+}
