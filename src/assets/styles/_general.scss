@@ -54,7 +54,7 @@ body {
 }
 
 .bg {
-    background: url("./src/assets/img/outerspace-bg.png") repeat-x top left;
+    background: url("/img/outerspace-bg.png") repeat-x top left;
     width: 3600px;
     height: 100vh;
     background-size: contain;
@@ -100,7 +100,7 @@ body {
             border: 3px solid var(--color-borderBorder);
             border-radius: var(--border-radius);
             height: 100%;
-            background: url("./src/assets/img/borderspaceback.png") no-repeat 50% 50%;
+            background: url("/img/borderspaceback.png") no-repeat 50% 50%;
             background-size: 10%;
             filter: drop-shadow(0 0 5px var(--color-redblood));
             box-shadow: 0 0 15px rgb(245, 188, 73, 0.7);
@@ -109,7 +109,7 @@ body {
         &--Alliance {
             padding: 1rem;
             border: 3px solid var(--color-aqua);
-            background: url("./src/assets/img/alliance-logo.png") no-repeat 50% 50%;
+            background: url("/img/alliance-logo.png") no-repeat 50% 50%;
             border-radius: var(--border-radius);
             background-size: 12%;
             filter: drop-shadow(0 0 5px var(--color-aqua));
